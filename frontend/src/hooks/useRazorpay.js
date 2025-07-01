@@ -20,7 +20,7 @@ const useRazorpay = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/payment/create-order`,
+        `${import.meta.env.VITE_REACT_APP_API_URL}/payment/create-order`,
         {
           method: "POST",
           headers: {
@@ -45,7 +45,7 @@ const useRazorpay = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `${import.meta.env.VITE_BACKEND_URL}/api/payment/verify-payment`,
+        `${import.meta.env.VITE_REACT_APP_API_URL}/payment/verify-payment`,
         {
           method: "POST",
           headers: {
