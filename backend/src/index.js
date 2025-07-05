@@ -14,13 +14,8 @@ import paymentRoutes from "./routes/payment.js";
 dotenv.config();
 const app = express();
 
-// app.use(cors());
-app.use(
-  cors({
-    origin: "https://lms-chi-opal-21.vercel.app",
-    credentials: true,
-  })
-);
+app.use(cors());
+
 
 
 // Body parsing middleware
